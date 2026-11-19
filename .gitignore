@@ -1,0 +1,14 @@
+.gradle/
+.idea/
+.kotlin/
+**/build/
+local.properties
+secrets.properties
+*.iml
+/secrets.properties
+/local.properties
+/.gradle/
+/.idea/
+/.kotlin/
+/build/
+/app/build/

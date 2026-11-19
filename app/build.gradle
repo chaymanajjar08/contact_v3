@@ -1,0 +1,29 @@
+plugins {
+ id 'com.android.application'
+ id 'org.jetbrains.kotlin.android'
+}
+def secrets = new Properties()
+def secretFile = rootProject.file('secrets.properties')
+if (secretFile.isFile()) secretFile.withInputStream { secrets.load(it) }
+android {
+ namespace 'fr.tp.contactsv3'
+ compileSdk 35
+ defaultConfig {
+  applicationId 'fr.tp.contactsv3'
+  minSdk 23
+  targetSdk 34
+  versionCode 1
+  versionName '3.0'
+  manifestPlaceholders = [mapsKey: secrets.getProperty('MAPS_API_KEY', 'NON_CONFIGUREE').trim()]
+ }
+ compileOptions {
+  sourceCompatibility JavaVersion.VERSION_17
+  targetCompatibility JavaVersion.VERSION_17
+ }
+ kotlinOptions { jvmTarget = '17' }
+}
+dependencies {
+ implementation 'androidx.fragment:fragment-ktx:1.6.0'
+ implementation 'androidx.recyclerview:recyclerview:1.1.0'
+ implementation 'com.google.android.gms:play-services-maps:19.2.0'
+}

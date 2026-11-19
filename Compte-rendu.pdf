@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1515 >>
+stream
+BT /F1 21 Tf 50 790 Td (Contacts V3) Tj ET
+BT /F1 11 Tf 50 764 Td (Compte rendu technique - Kotlin et interfaces XML) Tj ET
+BT /F1 12 Tf 15 TL 50 727 Td (Architecture et navigation) Tj T* /F1 10 Tf
+(MainActivity affiche trois fragments dans un FragmentContainerView.) Tj T*
+(replace et addToBackStack gerent les retours liste, detail et carte.) Tj T*
+(Le Bundle contient un identifiant stable. Le ViewModel partage survit a la rotation.) Tj T*
+(LiveData actualise la liste apres enregistrement. Annuler ecarte les modifications.) Tj T* T*
+/F1 12 Tf (RecyclerView et recherche) Tj T* /F1 10 Tf
+(ListAdapter et DiffUtil actualisent les lignes selon le modele Contact.) Tj T*
+(Le ViewHolder reutilise les vues. Le clic transmet l identifiant du contact lie.) Tj T*
+(Le filtre verifie le nom, le prenom et le telephone sans distinguer la casse.) Tj T* T*
+/F1 12 Tf (Google Maps et validation) Tj T* /F1 10 Tf
+(La latitude doit etre comprise entre -90 et 90, la longitude entre -180 et 180.) Tj T*
+(Les deux champs peuvent rester vides. La carte centre un marqueur au nom du contact.) Tj T*
+(La cle est configuree dans secrets.properties, ignore par Git, et restreinte dans Google Cloud.) Tj T* T*
+/F1 12 Tf (Tests et difficultes) Tj T* /F1 10 Tf
+(Voir le README pour les scenarios. Consigner les resultats et captures apres execution.) Tj T*
+(Verifier les applications externes, la rotation et le retour depuis la carte.) Tj T*
+(L affichage de la carte depend de la cle et des services Google Play de l appareil.) Tj ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1878
+%%EOF
